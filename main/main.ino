@@ -2,10 +2,6 @@
 
   Main module
 
-  # Modified by Kyle T. Gabriel to fix issue with incorrect GPS data for TTNMapper
-
-  Copyright (C) 2018 by Xose Pérez <xose dot perez at gmail dot com>
-
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -28,8 +24,6 @@
 #include <Button2.h>
 #include <Ticker.h>
 #include <WiFi.h>
-//#include <LowPower.h>
-
 
 bool pmu_irq = false;
 String baChStatus = "No charging";
@@ -93,8 +87,7 @@ void send() {
   digitalWrite(LED_PIN1, HIGH);
   delay(200);
   digitalWrite(LED_PIN, LOW);
-  digitalWrite(LED_PIN1, LOW);
-  //count++;
+  digitalWrite(LED_PIN1, LOW);  
   RTC_seqnoUp++;
   Serial.println(RTC_seqnoUp);
 }

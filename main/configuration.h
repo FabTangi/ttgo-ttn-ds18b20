@@ -88,8 +88,8 @@ void ttn_register(void (*callback)(uint8_t message));
 
 #define I2C_SDA         21
 #define I2C_SCL         22
-#define LED_PIN         25 //14
-#define LED_PIN1         12 //Use pin 12 for External Led
+#define LED_PIN         25 //This is the green LED (opposite to the Bue and Red one)
+#define LED_PIN1        12 //Use pin 12 for External Led //Not identified yet
 #define VBAT_PIN        35
 
 #define BUTTON_PIN      39
