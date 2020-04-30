@@ -1,8 +1,6 @@
 /*
 
-TTGO T-BEAM Tracker for The Things Network
-
-Copyright (C) 2018 by Xose Pérez <xose dot perez at gmail dot com>
+TTGO 
 
 This code requires LMIC library by Matthijs Kooijman
 https://github.com/matthijskooijman/arduino-lmic

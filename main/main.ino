@@ -264,7 +264,7 @@ void setup() {
   delay(1000); 
 
   //Reduce clock speed to reduce power consumption.
-  //rtc_clk_cpu_freq_set(RTC_CPU_FREQ_80M); 
+  rtc_clk_cpu_freq_set(RTC_CPU_FREQ_80M); 
 
     //Increment boot number and print it every reboot
   ++bootCount;
