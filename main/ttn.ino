@@ -122,6 +122,7 @@ void ttn_register(void (*callback)(uint8_t message)) {
     _lmic_callbacks.push_back(callback);
 }
 
+
 size_t ttn_response_len() {
     return LMIC.dataLen;
 }
@@ -232,7 +233,7 @@ void ttn_adr(bool enabled) {
     LMIC_setAdrMode(enabled);
 }
 
-void ttn_cnt(unsigned char num) {
+void ttn_cnt(unsigned long num) {
     LMIC_setSeqnoUp(num);
 }
 
